@@ -6,7 +6,7 @@ console.log("=== Kata 3: Strängar och template literals ===");
 // Steg 1: Startkod - Strängkonkatenering
 var name = "Anna";
 var city = "Stockholm";
-var message = "Hej " + name + "! Välkommen till " + city + ".";
+var message = `Hej ${name}! Välkommen till ${city}.`;
 console.log(message); // Vad skrivs ut?
 
 // Steg 2: Förbättra med template literals
@@ -16,9 +16,9 @@ console.log(message); // Vad skrivs ut?
 
 // Steg 3: Multirad-strängar
 // Skapa en presentation med flera rader:
-// var info = `Namn: ${name}
-// Stad: ${city}`;
-// console.log(info);
+var info = `Namn: ${name}
+Stad: ${city}`;
+console.log(info);
 
 // Steg 4: Diskutera
 // Vad är fördelarna med template literals jämfört med +?

@@ -6,8 +6,10 @@ console.log("=== Kata 5: Spread Operator ===");
 // Steg 1: Startkod - Kombinera arrayer med concat
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
-const combined = arr1.concat(arr2);
-console.log("Kombinerad med concat:", combined);
+const combinedSpread = [...arr1, ...arr2];
+console.log("Kombinerad med spread:", combinedSpread);
+const arr1Copy = [...arr1, 7];
+console.log("Kopierad och utökad:", arr1Copy);
 
 // Steg 2: Använd spread operator
 // const combinedSpread = [...arr1, ...arr2];

@@ -14,6 +14,11 @@ console.log("Studentens namn:", student.name);
 console.log("Studentens ålder:", student.age);
 console.log("Gillar kaffe?", student.likesCoffee);
 
+student.greet = function() {
+     return "Hej, jag heter " + this.name;
+};
+ console.log(student.greet());
+
 // Steg 2: Lägg till en metod
 // student.greet = function() {
 //     return "Hej, jag heter " + this.name;
@@ -21,16 +26,16 @@ console.log("Gillar kaffe?", student.likesCoffee);
 // console.log(student.greet());
 
 // Steg 3: Skapa objekt med variabler och shorthand
-// const name = "Erik";
-// const age = 22;
-// const person = {
-//     name, // shorthand
-//     age, // shorthand
-//     greet() {
-//         return `Hej, jag heter ${this.name}`;
-//     }
-// };
-// console.log(person.greet());
+ const name = "Erik";
+ const age = 22;
+ const person = {
+     name, // shorthand
+     age, // shorthand
+     greet() {
+        return `Hej, jag heter ${this.name}`;
+    }
+};
+console.log(person.greet());
 
 // Steg 4: Diskutera
 // Vad är ett objekt? Hur kan man använda dem?

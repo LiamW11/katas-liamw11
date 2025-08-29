@@ -4,7 +4,7 @@
 console.log("=== Kata 1: Variabler ===");
 
 // Steg 1: Startkod
-var name = "Anna";
+let name = "Anna";
 console.log("Startvärde:", name); // Anna
 
 // Steg 2: Ändra värdet

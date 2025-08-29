@@ -5,13 +5,8 @@ console.log("=== Kata 8: Array.filter() ===");
 
 // Steg 1: Startkod - Filtrera med for-loop
 const numbers = [5, 12, 8, 130, 44];
-const overTen = [];
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 10) {
-        overTen.push(numbers[i]);
-    }
-}
-console.log("Med for-loop:", overTen);
+const overTenFilter = numbers.filter(num => num > 10);
+console.log("Med filter:", overTenFilter);
 
 // Steg 2: Gör samma sak med filter
 // const overTenFilter = numbers.filter(num => num > 10);

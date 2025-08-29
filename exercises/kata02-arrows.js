@@ -16,8 +16,7 @@ function greetWithName(name) {
 greetWithName("Anna"); // Vad skrivs ut?
 
 // Steg 3: Testa att returnera ett värde
-function add(a, b) {
-    return a + b;
+const add = (a, b) => a + b; {
 }
 console.log("add(2, 3) =", add(2, 3));
 
@@ -26,7 +25,7 @@ console.log("add(2, 3) =", add(2, 3));
 // Testa och se att det fungerar likadant
 
 // Steg 5: Introducera 'this'
-/*
+
 const person = {
     name: "Anna",
     regularGreet: function() {
@@ -39,7 +38,7 @@ const person = {
 };
 person.regularGreet(); // Vad skrivs ut?
 person.arrowGreet();   // Vad skrivs ut?
-*/
+
 
 // Steg 6: Diskutera
 // Vad är skillnaden mellan vanlig function och arrow function?

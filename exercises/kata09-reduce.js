@@ -5,11 +5,8 @@ console.log("=== Kata 9: Array.reduce() ===");
 
 // Steg 1: Startkod - Summera med for-loop
 const prices = [10, 25, 15, 40];
-let total = 0;
-for (let i = 0; i < prices.length; i++) {
-    total += prices[i];
-}
-console.log("Summa med for-loop:", total);
+const totalReduce = prices.reduce((sum, price) => sum + price, 0);
+console.log("Summa med reduce:", totalReduce);
 
 // Steg 2: Gör samma sak med reduce
 // const totalReduce = prices.reduce((sum, price) => sum + price, 0);

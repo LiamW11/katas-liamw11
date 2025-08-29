@@ -5,11 +5,8 @@ console.log("=== Kata 7: Array.map() ===");
 
 // Steg 1: Startkod - Transformera med for-loop
 const names = ["anna", "erik", "sara"];
-const upperNames = [];
-for (let i = 0; i < names.length; i++) {
-    upperNames.push(names[i].toUpperCase());
-}
-console.log("Med for-loop:", upperNames);
+const upperNamesMap = names.map(name => name.toUpperCase());
+console.log("Med map:", upperNamesMap);
 
 // Steg 2: Gör samma sak med map
 // const upperNamesMap = names.map(name => name.toUpperCase());

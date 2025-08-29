@@ -4,10 +4,10 @@
 console.log("=== Kata 6: Default Parameters ===");
 
 // Steg 1: Startkod - Funktion utan defaultvärde
-function greet(name) {
-    return "Hej " + name + "!";
-}
-console.log(greet()); // Vad skrivs ut?
+function greet(name = "Vän") {
+       return "Hej " + name + "!";
+ }
+console.log(greet("Anna")); // Vad skrivs ut?
 
 // Steg 2: Lägg till defaultvärde
 // function greet(name = "Vän") {

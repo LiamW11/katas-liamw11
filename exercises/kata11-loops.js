@@ -5,8 +5,8 @@ console.log("=== Kata 11: for...of Loops ===");
 
 // Steg 1: Startkod - Iterera med for-loop
 const fruits = ["äpple", "banan", "apelsin"];
-for (let i = 0; i < fruits.length; i++) {
-    console.log("Jag gillar", fruits[i]);
+for (const fruit of fruits) {
+    console.log("Jag gillar", fruit);
 }
 
 // Steg 2: Gör samma sak med for...of

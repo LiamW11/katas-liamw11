@@ -5,8 +5,9 @@ console.log("=== Kata 4: Destructuring Objects ===");
 
 // Steg 1: Startkod - Plocka ut värden på "gammalt" sätt
 const person = { name: "Anna", age: 25, city: "Stockholm" };
-console.log("Namn:", person.name);
-console.log("Ålder:", person.age);
+const { name, age } = person;
+console.log("Namn:", name);
+console.log("Ålder:", age);
 
 // Steg 2: Introducera destructuring
 // Byt ut ovan mot:
